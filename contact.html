@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+        <title>Contact</title>
+
+      </head>
+      <body>
+          <main>
+              <form method="POST" action="#">
+                <!--Pour améliorer l'affichage des éléments je vais uiliser un tableau-->
+                <fieldset>
+                    <legend> <strong>Informations de contact: </legend>
+                    <table>
+                      <tr>
+                        <td><label for="nom"><b>Nom<sup>*</sup>:</b></label></td>
+                        <td><input type="text" name="nom" id="nom" placeholder="NOM" size="30%" required /></td>
+                      </tr>
+                      <tr>
+                        <td><label for="prenom"><b>Prénom<sup>*</sup>:</b></label></td>
+                        <td><input type="text" name="prenom" id="prenom" placeholder="Prénom" size="30%" required /></td>
+                      </tr>
+                      <tr>
+                        <td><label for="email"><b>Email<sup>*</sup>:</b></label></td>
+                        <td><input type="email" name="email" id="email" placeholder="par exemple: dupont.alex@free.fr" size="30%" required/></td>
+                      </tr>
+                      <tr>
+                        <td><label for="tel"><b>Téléphone<sup>*</sup>:</b></label></td>
+                        <td><input type="tel" name="tel" id="tel" placeholder="par exemple: 07 89 67 45 23" size="30%" required/></td>
+                      </tr>
+                      <tr>
+                        <td><label for="canal"><b>Canal de contact préféré:</b></label></td>
+                        <td>
+                          <select name="canal" id="canal" >
+                            <option value="">Choisir un canal de contact</option>
+                            <option value="tel">   Téléphone</option>
+                            <option value="email"> Email </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><label for="msg"><b>Message:</b></label></td>
+                        <td>
+                          <textarea rows="15" cols="50" name="msg", id="msg">Tapez ici vos commentaires</textarea>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><input type="submit" value="ENVOYER" name="envoyer" id="envoyer"/></td>
+                        <td><input type="reset" value="EFFACER" name="effacer" id="effacer"/></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"> <small><sup>*</sup>: Informations obligatoires</small></td>
+                      </tr>
+                    </table>
+              </form>
+          </main>
+      </body>
+  </html>
